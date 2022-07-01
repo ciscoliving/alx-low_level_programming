@@ -14,7 +14,6 @@ int main(void)
 	{
 		printf("\n %d" ,num);
 	}
-	getch();
 	printf("\n");
 	return (0);
 }
