@@ -7,12 +7,12 @@
  */
 int main(void)
 {
-	int f, sum = 0;
+	int d, sum = 0;
 
-	for (f = 0; f < 1024; f++)
+	for (d = 0; d < 1024; d++)
 	{
-		if ((f % 3) == 0 || (f % 5) == 0)
-			sum += f;
+		if ((d % 3) == 0 || (d % 5) == 0)
+			sum += d;
 	}
 	printf("%d\n", sum);
 	return (0);
