@@ -7,13 +7,15 @@
  */
 int main(void)
 {
-	int d, sum = 0;
+	int i, sum = 0;
 
-	for (d = 0; d < 1024; d++)
+	for (i = 0; i < 1024; i++)
 	{
-		if ((d % 3) == 0 || (d % 5) == 0)
-			sum += d;
+		if ((i % 3) == 0 || (i % 5) == 0)
+			sum += i;
 	}
+
 	printf("%d\n", sum);
+
 	return (0);
 }
