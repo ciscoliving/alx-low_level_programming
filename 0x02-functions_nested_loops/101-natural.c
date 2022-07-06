@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main -list down all natural numbers 1024, except the multiples of 3 and 5.
+ * main - list down all natural numbers 1024, except the multiples of 3 and 5.
  * 
  * Return: Always 0.
  */
