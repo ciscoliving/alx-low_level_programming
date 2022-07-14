@@ -1,21 +1,29 @@
 #include "main.h"
 
 /**
- * print_number - Prints an integer.
- * @n: The integer to be printed.
+ * rot13 - encode characters
+ * @k: array of characters
+ *
+ * Return: array k
  */
-void print_number(int n)
+
+char *rot13(char *k)
 {
-	unsigned int num = n;
+	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char b[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	if (n < 0)
+	int i = 0;
+	int j = 0;
+
+	while (k[i] != '\0')
 	{
-		_putchar('-');
-		num = -num;
+		for (j = 0; a[j] != '\0' && k[i] != a[j]; j++)
+			;
+		if (j < 52)
+		{
+			k[i] = b[j];
+		}
+		i++;
 	}
-
-	if ((num / 10) > 0)
-		print_number(num / 10);
-
-	_putchar((num % 10) + '0');
+	return (k);
 }
