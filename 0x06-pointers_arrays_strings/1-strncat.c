@@ -2,11 +2,11 @@
 
 /**
  * _strcat - Concatenates the string pointed to by @src.
- * @dest: Stands for destination
- * @src: Stands for source
+ * @dest: stands for destination
+ * @src: stands for source
  * @n: integer
  *
- * Return: destination
+ * Return: Destination
  */
 
 char *_strncat(char *dest, char *src, int n)
