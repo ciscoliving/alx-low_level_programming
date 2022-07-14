@@ -2,6 +2,7 @@
 
 /**
  * _strcmp - function that compares two strings
+ *
  * @s1: The function of strings
  * @s2: The function of strcmp
  *
@@ -15,13 +16,13 @@ int _strcmp(char *s1, char *s2)
 		s2++;
 	}
 
-
+	
 	if (*s1 == *s2)
 	{
 		return (0);
 	}
 	else
 	{
-		return (*s1 - *s2)
+		return (*s1 - *s2);
 	}
 }
