@@ -1,19 +1,28 @@
-#include <stdio.h>
+#include "main.h"
 
-/** main adda line thats prints a[2] =98
+/**
+ * _strncpy - copies strings
+ * @dest: stands for destination
+ * @src: stands for source
+ * @n: integer
  *
- * Return: Always 0
+ * Return: destination
  */
-int main(void)
+
+char *_strncpy(char *dest, char *src, int n)
 {
-	int n;
-	int a[2];
-	int *p;
-
-	a[2] = 1024;
-	p = &n;
-	*(p + 2) = 98;
-
-	printf("a[2] = %d\n", a[2]);
-	return (0);
+	int j = 0;
+	
+	for (j = 0; src[j] != '\0'; j++)
+	{
+		if (j < n)
+		{
+			dest[j] = src[j];
+		}
+	}
+	for (; j < n; j++)
+	{
+		dest[j] = '\0';
+	}
+	return (dest);
 }
