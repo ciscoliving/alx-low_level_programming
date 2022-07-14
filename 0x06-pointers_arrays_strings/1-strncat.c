@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _strcat - Concatenates the string pointed to by @src.
- * @dest: stands for destination
- * @src: stands for source
+ * _strncat - concatenate strings
+ * @dest: destination
+ * @src: source
  * @n: integer
  *
- * Return: Destination
+ * Return: destination
  */
 
 char *_strncat(char *dest, char *src, int n)
