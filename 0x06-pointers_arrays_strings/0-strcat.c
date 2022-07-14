@@ -1,21 +1,25 @@
 #include "main.h"
 
 /**
- * strcat - Concatenates the string pointed to by @src, including the terminating null byte, to the end of the string pointed to by @dest.
- * @dest: A pointer to the string to be concatenated upon.
- * @src: The source string to be appended to @dest.
+ * _strcat - Concatenates the string pointed to by @src.
+ * @dest: Stands for destination
+ * @src: Stands for source
  *
- * Return: A pointer to the destination string @dest.
+ * Return: dest
  */
-char *strcat(char *dest, const char *src)
+
+char *_strcat(char *dest, char *src)
 {
-	int index = 0, dest_len = 0;
+	int i = 0;
+	int j = 0;
 
-	while (dest[index++])
-		dest_len++;
-
-	for (index = 0; src[index]; index++)
-		dest[dest_len++] = src[index];
-
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	for (j = 0; src[j] != '\0'; j++)
+	{
+		dest[i + j] = src[j];
+	}
 	return (dest);
 }
