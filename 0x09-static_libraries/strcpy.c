@@ -8,7 +8,7 @@
  *
  * Return: the value of dest
  */
-char *_strcpy(char *dest, Schar *src)
+char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
 
