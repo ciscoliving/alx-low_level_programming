@@ -2,13 +2,21 @@
 #include <ctype.h>
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * _isalpha - check for alphabetic character
+ * @c: verify character
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: 0
  */
 int _isalpha(int c)
 {
-	return (0);
+	if (c >= 65 && c <= 90)
+	{
+		return (1);
+	}
+	else if (c >= 97 && c <= 122)
+	{
+		return (1);
+	}
+	else
+		return (0);
 }

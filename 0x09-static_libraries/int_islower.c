@@ -2,13 +2,17 @@
 #include <ctype.h>
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * _islower - check for lowercase alphabet
+ * @c: the character to print
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: 0
  */
 int _islower(int c)
 {
-	return (0);
+	if (c >= 97 && c <= 122)
+	{
+		return (1);
+	}
+	else
+		return (0);
 }

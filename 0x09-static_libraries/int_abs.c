@@ -1,13 +1,16 @@
 #include "main.h"
 
 /**
- * _putchar - writes the character c to stdout
- * @a: The character to print
+ * _abs - compute the absolute value of an integer
+ * @a: print character
  *
  * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
  */
 int _abs(int a)
 {
-	return (0);
+	if (a > 0)
+		return (a);
+	else
+		return (-a);
+
 }
