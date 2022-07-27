@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 /**
- * main - Prints the minimum number of coins to make change for an amount of money.
- * @argc: The number of arguments supplied to the program.
+ * main - Prints the addition of positive numbers,followed by newline.
+ * @argc: The number of arguments passed to the program.
  * @argv: An array of pointers to the arguments.
  *
- * Return: If the number of arguments is not exactly one - 1.
- * Otherwise - 0.
+ * Return: If one of the numbers contains symbols that are non-digits - 1.
+ * otherwise 0
  */
 int main(int argc, char *argv[])
 {
@@ -18,9 +18,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-
 	cents = atoi(argv[1]);
-
 	while (cents > 0)
 	{
 		coins++;
@@ -45,10 +43,7 @@ int main(int argc, char *argv[])
 			continue;
 		}
 		cents--;
-
 	}
-
 	printf("%d\n", coins);
-
-	printf("%d\n", coins);
+	return (0);
 }
