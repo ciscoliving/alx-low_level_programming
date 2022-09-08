@@ -4,7 +4,6 @@
 /**
  * print_listint - prints all elements of listint_t
  * @h: points to start of list
- * 
  * Return: size_t (number of nodes)Return: size_t (number of nodes)
  */
 size_t print_listint(const listint_t *h)
